@@ -22,7 +22,7 @@ export default function Home() {
 			</div>
 
 
-			<div className="mt-8">
+			<div className="mt-4">
 				<Snippet hideSymbol hideCopyButton variant="flat">
 					<span>
 						<Code className="mb-5" color="success">currenly all worker is online</Code>
