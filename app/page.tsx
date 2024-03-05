@@ -11,10 +11,10 @@ import Starfield from 'react-starfield';
 
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-5">
+		<section className="flex flex-col items-center justify-center">
 			<div className="inline-block max-w-lg text-center justify-center">
 				<h1 className={title()}>Start mine&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>Univer&nbsp;</h1>
+				<h1 className={title({ color: "violet" })}>Univermine&nbsp;</h1>
 				<br />
 				<div className="mt-4">
 				<Snippet hideSymbol hideCopyButton variant="flat">
