@@ -28,7 +28,7 @@ export default function Home() {
 						<Code className="mb-5" color="success">currenly all worker is online</Code>
 						<BodyCounter />
 						<div className="flex justify-center mt-5 mb-5">
-							<Button color="success" variant="ghost" isLoading="false">
+							<Button color="success" variant="ghost">
 								MINER ON!
 							</Button> 
 						</div>
