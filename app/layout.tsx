@@ -59,7 +59,7 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						<div class="text-white py-4 fixed bottom-0 w-full mt-5 mb-3">
+						<div className="text-white py-4 fixed bottom-0 w-full mt-5 mb-3">
 							<div class="container mx-auto flex justify-center items-center gap-2">
 								<Counter class=""fixed/>
 							
