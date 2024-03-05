@@ -6,6 +6,13 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import Starfield from 'react-starfield';
+import Banner from "@/components/banner"
+import {Button} from "@nextui-org/react";
+import {HeartIcon} from './HeartIcon';
+import {CameraIcon} from './CameraIcon';
+import {Progress} from "@nextui-org/react";
+import { Counter, ProgressCounter } from "@/components/counter";
 
 export const metadata: Metadata = {
 	title: {
@@ -32,6 +39,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />
+			
 			<body
 				className={clsx(
 					"min-h-screen bg-background font-sans antialiased",
@@ -39,22 +47,38 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+					<Starfield
+						starCount={6000}
+						starColor={[255, 255, 255]}
+						speedFactor={0.01}
+						backgroundColor="black"
+					/>
 					<div className="relative flex flex-col h-screen">
+						{/* <Banner /> */}
 						<Navbar />
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-3">
-							<Link
-								isExternal
-								className="flex items-center gap-1 text-current"
-								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-								title="nextui.org homepage"
-							>
-								<span className="text-default-600">Powered by</span>
-								<p className="text-primary">NextUI</p>
-							</Link>
-						</footer>
+						<div class="text-white py-4 fixed bottom-0 w-full mt-5 mb-3">
+							<div class="container mx-auto flex justify-center items-center gap-2">
+								<Counter class=""fixed/>
+							
+								<Button startContent={<CameraIcon />}>
+									Friends
+								</Button>
+								<Button startContent={<HeartIcon />}>
+									Boost
+								</Button>
+								<Button startContent={<HeartIcon />}>
+									Task
+								</Button>
+							</div>
+							<div className="mt-5">
+							<ProgressCounter />
+							</div>
+							
+						</div>
+						
 					</div>
 				</Providers>
 			</body>
