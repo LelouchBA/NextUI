@@ -57,7 +57,7 @@ export const Navbar = () => {
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<p className="font-bold text-inherit">UNIVERMINE</p>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -110,9 +110,9 @@ export const Navbar = () => {
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
+				{/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
 					<GithubIcon className="text-default-500" />
-				</Link>
+				</Link> */}
 				<ThemeSwitch />
 				{/* <NavbarMenuToggle /> */}
 			</NavbarContent>
