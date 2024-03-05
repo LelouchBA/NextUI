@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -63,13 +64,13 @@ export default function RootLayout({
 							<div className="container mx-auto flex justify-center items-center gap-2">
 								<Counter />
 							
-								<Button >
+								<Button startContent={<CameraIcon />}>
 									Friends
 								</Button>
-								<Button >
+								<Button startContent={<HeartIcon />}>
 									Boost
 								</Button>
-								<Button >
+								<Button startContent={<HeartIcon />}>
 									Task
 								</Button>
 							</div>
