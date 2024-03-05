@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = {
+const nextConfig = {
+    reactStrictMode: true, // Enable React Strict Mode
+  }
+  
+  module.exports = {
     nextConfig,
     eslint: {
-        // Warning: This allows production builds to successfully complete even if
-        // your project has ESLint errors.
-        ignoreDuringBuilds: true,
-      },
-}
+      // If you must keep ignoring errors during builds, 
+      // add a comment explaining why:
+      // ignoreDuringBuilds: true, // Temporary: Address ESLint errors ASAP  
+    },
+  }
+  
