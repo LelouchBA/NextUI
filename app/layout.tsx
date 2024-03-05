@@ -60,8 +60,8 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						<div className="text-white py-4 fixed bottom-0 w-full mt-5 mb-3">
-							<div className="container mx-auto flex justify-center items-center gap-2">
+						<div className="text-white py-4 fixed bottom-0 w-full">
+							<div className="p-3 container mx-auto flex justify-center items-center gap-2">
 								<Counter />
 							
 								<Button startContent={<CameraIcon />}>
@@ -74,7 +74,7 @@ export default function RootLayout({
 									Task
 								</Button>
 							</div>
-							<div className="mt-5">
+							<div className="p-1 mt-2">
 							<ProgressCounter />
 							</div>
 							

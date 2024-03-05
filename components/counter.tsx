@@ -26,9 +26,9 @@ export const Counter = () => {
   }, []); 
 
   return (
-    <div>
+    <div className="flex items-center justify-center">
 		  <Button color="success">
-			  $ {count.toFixed(5)}/{maxValue}
+			  $ {count.toFixed(2)}/{maxValue}
 		  </Button>
     </div>
   );
