@@ -60,7 +60,7 @@ export default function RootLayout({
 							{children}
 						</main>
 						<div className="text-white py-4 fixed bottom-0 w-full mt-5 mb-3">
-							<div class="container mx-auto flex justify-center items-center gap-2">
+							<div className="container mx-auto flex justify-center items-center gap-2">
 								<Counter class=""fixed/>
 							
 								<Button startContent={<CameraIcon />}>
