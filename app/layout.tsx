@@ -63,13 +63,13 @@ export default function RootLayout({
 							<div className="container mx-auto flex justify-center items-center gap-2">
 								<Counter />
 							
-								<Button startContent={<CameraIcon />}>
+								<Button >
 									Friends
 								</Button>
-								<Button startContent={<HeartIcon />}>
+								<Button >
 									Boost
 								</Button>
-								<Button startContent={<HeartIcon />}>
+								<Button >
 									Task
 								</Button>
 							</div>
