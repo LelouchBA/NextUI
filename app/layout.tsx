@@ -49,9 +49,9 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					
+					<Navbar />
 					<div className="relative flex flex-col h-screen">
-						<main className="container mx-auto max-w-7xl pt-6 px-6 flex-grow">
+						<main className="container mx-auto max-w-7xl pt-20 px-6 flex-grow">
 							<Starfield
 								starCount={6000}
 								starColor={[255, 255, 255]}
