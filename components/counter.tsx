@@ -27,7 +27,7 @@ export const Counter = () => {
 
   return (
     <div className="flex items-center justify-center">
-		  <Button color="success">
+		  <Button isDisabled color="success">
 			  $ {count.toFixed(2)}/{maxValue}
 		  </Button>
     </div>

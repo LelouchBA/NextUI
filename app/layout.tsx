@@ -1,5 +1,6 @@
 // @ts-nocheck
 import "@/styles/globals.css";
+import "@/styles/menu.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
 	},
 };
 
+
 export default function RootLayout({
 	children,
 }: {
@@ -52,13 +54,19 @@ export default function RootLayout({
 						starCount={6000}
 						starColor={[255, 255, 255]}
 						speedFactor={0.01}
-						backgroundColor="black"
+						
 					/>
 					<div className="relative flex flex-col h-screen">
-						{/* <Banner /> */}
-						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-							{children}
+						
+						{/* <Navbar /> */}
+						<main className="">
+							<div class="relative flex flex-col h-[100vh] items-center justify-center bg-white dark:bg-black transition-bg">
+								<div class="absolute inset-0 overflow-hidden">
+									<div class="jumbo absolute -inset-[10px] opacity-50"></div>
+								</div>
+								{children}
+							</div>
+							{/* {children} */}
 						</main>
 						<div className="text-white py-4 fixed bottom-0 w-full">
 							<div className="p-3 container mx-auto flex justify-center items-center gap-2">
