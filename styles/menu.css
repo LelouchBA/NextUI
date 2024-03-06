@@ -10,6 +10,7 @@ See a production optimized version here: https://charmui.com
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
+    overflow: hidden; /* Hide scrollbars on the entire body */
     font-family: Inter, sans-serif;
 }
 
