@@ -76,3 +76,11 @@ body {
 .dark .jumbo::after {
     background-image: var(--stripesDark), var(--rainbow);
 }
+
+.relative.flex.flex-col.h-screen {
+    position: fixed;  /* Make the container element fixed position */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+  }
