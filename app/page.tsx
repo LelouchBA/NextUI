@@ -1,15 +1,17 @@
-import { Link } from "@nextui-org/link";
+"use client"
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import { BodyCounter } from "@/components/counter";
 import {Button} from "@nextui-org/react";
-import Starfield from 'react-starfield';
+import React, { useEffect } from 'react';
 
 export default function Home() {
+	useEffect(() => {
+		// Assuming you've initialized Telegram.WebApp
+		Telegram.WebApp.themeParams.bg_color = '#FF6347'; // Your desired header color
+	  
+	  }, []); 
 	return (
 		<section className="flex flex-col items-center justify-center">
 			<div className="inline-block max-w-lg text-center justify-center">
@@ -34,22 +36,6 @@ export default function Home() {
 					Join Beautiful, fast and modern blockchain.
 				</h2>
 			</div>
-
-
-			{/* <div className="mt-4">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						<Code className="mb-5" color="success">currenly all worker is online</Code>
-						<BodyCounter />
-						<div className="flex justify-center mt-5 mb-5">
-							<Button color="success" variant="ghost">
-								MINER ON!
-							</Button> 
-						</div>
-						
-					</span>
-				</Snippet>
-			</div> */}
 		</section>
 	);
 }
