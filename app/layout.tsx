@@ -15,6 +15,7 @@ import {HeartIcon} from './HeartIcon';
 import {CameraIcon} from './CameraIcon';
 import {Progress} from "@nextui-org/react";
 import { Counter, ProgressCounter } from "@/components/counter";
+import Script from 'next/script'
 
 export const metadata: Metadata = {
 	title: {
@@ -41,7 +42,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>
-			<script src="https://telegram.org/js/telegram-web-app.js" />
+			<Script src="https://telegram.org/js/telegram-web-app.js"></Script>
 			
 			<body
 				className={clsx(
