@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head />
+			<head>
 			<script src="https://telegram.org/js/telegram-web-app.js"></script>
 			
 			<body
@@ -84,6 +84,7 @@ export default function RootLayout({
 					</div>
 				</Providers>
 			</body>
+			</head>
 		</html>
 	);
 }
