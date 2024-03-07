@@ -1,6 +1,7 @@
 // @ts-nocheck
 import "@/styles/globals.css";
 import "@/styles/menu.css";
+import "@/styles/bell.scss";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
@@ -49,8 +50,9 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
+				<Navbar />
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<Navbar />
+					
 					<div className="relative flex flex-col h-screen">
 						<main className="container mx-auto max-w-7xl pt-20 px-6 flex-grow">
 							<Starfield
