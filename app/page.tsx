@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client"
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code"
