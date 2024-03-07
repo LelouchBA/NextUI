@@ -20,7 +20,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 		<WebAppProvider
 			options={{
 				themeParams: {
-					header_bg_color: '#000000', // Warna hitam
+					headerColor: '#000000', // Warna hitam
 				},
 			}}
 		>
