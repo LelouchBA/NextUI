@@ -1,18 +1,11 @@
-// @ts-nocheck
-"use client"
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code"
 import { title, subtitle } from "@/components/primitives";
 import { BodyCounter } from "@/components/counter";
 import {Button} from "@nextui-org/react";
-import React, { useEffect } from 'react';
 
 export default function Home() {
-	useEffect(() => {
-		// Assuming you've initialized Telegram.WebApp
-		Telegram.WebApp.themeParams.bg_color = '#FF6347'; // Your desired header color
-	  
-	  }, []); 
+	
 	return (
 		<section className="flex flex-col items-center justify-center">
 			<div className="inline-block max-w-lg text-center justify-center">
