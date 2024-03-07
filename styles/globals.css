@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Mengubah warna latar belakang header */
+.tgme_head_box {
+    background-color: #000000 !important;
+  }
+  
+  /* Mengubah warna teks header */
+  .tgme_head_title,
+  .tgme_head_search_icon {
+    color: #ffffff !important;
+  }
+  
+  /* Mengubah warna ikon header */
+  .tgme_head_btn,
+  .tgme_head_btn:hover {
+    background-color: transparent !important;
+    color: #ffffff !important;
+  }
+  
+  /* Mengubah warna garis bawah header */
+  .tgme_head_box_shadow {
+    background-color: #222222 !important;
+  }
