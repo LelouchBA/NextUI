@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import * as React from "react";
@@ -17,16 +16,8 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   const router = useRouter();
 
 	return (
-		
 		<NextUIProvider navigate={router.push}>
-			<NextThemesProvider {...themeProps}>
-				<WebAppProvider
-					options={{
-						headerColor: '#000000', // Assuming this works for the header background
-					}}
-				/>
-				{children}
-			</NextThemesProvider>
+			<NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
 		</NextUIProvider>
 	);
 }
