@@ -8,18 +8,6 @@ See a production optimized version here: https://charmui.com
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-/* Mengubah warna header menjadi hitam */
-.tg-theme-header {
-    background-color: #000000 !important;
-  }
-  
-  /* Menyesuaikan warna teks header agar mudah dibaca */
-  .tg-theme-header-title,
-  .tg-theme-header-back-button,
-  .tg-theme-header-forward-button {
-    color: #ffffff !important;
-  }
   
 
 body {
