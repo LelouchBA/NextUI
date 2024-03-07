@@ -1,5 +1,4 @@
 // @ts-nocheck
-"use client"
 import "@/styles/globals.css";
 import "@/styles/menu.css";
 import { Metadata } from "next";
@@ -17,9 +16,23 @@ import {HeartIcon} from './HeartIcon';
 import {CameraIcon} from './CameraIcon';
 import {Progress} from "@nextui-org/react";
 import { Counter, ProgressCounter } from "@/components/counter";
-import React from 'react'; 
 
-
+export const metadata: Metadata = {
+	title: {
+		default: siteConfig.name,
+		template: `%s - ${siteConfig.name}`,
+	},
+	description: siteConfig.description,
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "white" },
+		{ media: "(prefers-color-scheme: dark)", color: "black" },
+	],
+	icons: {
+		icon: "/favicon.ico",
+		shortcut: "/favicon-16x16.png",
+		apple: "/apple-touch-icon.png",
+	},
+};
 
 export default function RootLayout({
 	children,
@@ -40,11 +53,6 @@ export default function RootLayout({
 					<Navbar />
 					<div className="relative flex flex-col h-screen">
 						<main className="container mx-auto max-w-7xl pt-20 px-6 flex-grow">
-							<WebAppProvider
-								options={{
-									headerColor: '#000000', // Assuming this works for the header background
-								}}
-							/>
 							<Starfield
 								starCount={6000}
 								starColor={[255, 255, 255]}
