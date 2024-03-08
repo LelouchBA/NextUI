@@ -12,7 +12,7 @@ import clsx from "clsx";
 import Starfield from 'react-starfield';
 import { WebAppProvider } from "@vkruglikov/react-telegram-web-app";
 import Banner from "@/components/banner"
-import {Button} from "@nextui-org/react";
+import {Button, ButtonGroup} from "@nextui-org/react";
 import {HeartIcon} from './HeartIcon';
 import {CameraIcon} from './CameraIcon';
 import {Progress} from "@nextui-org/react";
@@ -66,6 +66,7 @@ export default function RootLayout({
 						<div className="text-white py-4 fixed bottom-0 w-full">
 							<div className="p-3 container mx-auto flex justify-center items-center gap-2">
 								<Counter />
+								<ButtonGroup>
 							
 								<Button startContent={<CameraIcon />}>
 									Friends
@@ -76,6 +77,7 @@ export default function RootLayout({
 								<Button startContent={<HeartIcon />}>
 									Task
 								</Button>
+								</ButtonGroup>
 							</div>
 							<div className="p-1 mt-2">
 							<ProgressCounter />

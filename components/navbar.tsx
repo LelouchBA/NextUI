@@ -54,12 +54,12 @@ export const Navbar = () => {
 					<Button
 						isExternal
 						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-50 w-full"
+						className="text-md font-bold text-default-600 bg-default-50 w-full"
 						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
+						// startContent={<HeartFilledIcon className="text-success" />}
 						variant="flat"
 					>
-						Sponsor
+						JOIN SQUAD
 					</Button>
 				</NavbarItem>
 		</NextUINavbar>
