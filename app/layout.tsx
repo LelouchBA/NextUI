@@ -77,6 +77,9 @@ export default function RootLayout({
 								<Button startContent={<HeartIcon />}>
 									Task
 								</Button>
+								<Button startContent={<HeartIcon />}>
+									Pad
+								</Button>
 								</ButtonGroup>
 							</div>
 							<div className="p-1 mt-2">
