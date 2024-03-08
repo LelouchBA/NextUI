@@ -65,7 +65,7 @@ export default function RootLayout({
 						</main>
 						<div className="text-white py-4 fixed bottom-0 w-full">
 							<div className="p-3 container mx-auto flex justify-center items-center gap-2">
-								<Counter />
+								{/* <Counter /> */}
 								<ButtonGroup>
 							
 								<Button startContent={<CameraIcon />}>

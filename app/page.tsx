@@ -43,15 +43,6 @@ export default function Home() {
 				<h2 className={subtitle({ class: "mt-4" })}>
 					Join Beautiful, fast and modern blockchain.
 				</h2>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Join Beautiful, fast and modern blockchain.
-				</h2>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Join Beautiful, fast and modern blockchain.
-				</h2>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Join Beautiful, fast and modern blockchain.
-				</h2>
 			</div>
 		</section>
 	);
